@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
+    <link rel="stylesheet" href="vendors/css/animate.css" />
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/queries.css" />
     <link
@@ -19,27 +20,37 @@
     <!-- HEADER -->
     <!----------------------------------------------->
 
-    <header>
-      <div class="row">
-        <img
-          src="/resources/img/logo-white.png"
-          alt="Omnifood logo"
-          class="logo"
-        />
-        <ul class="main-nav">
-          <li><a href="javascript:undefined">Food delivery</a></li>
-          <li><a href="javascript:undefined">How it works</a></li>
-          <li><a href="javascript:undefined">Our cities</a></li>
-          <li><a href="javascript:undefined">Sign up</a></li>
-        </ul>
-      </div>
+    <header id="top">
+      <nav>
+        <div class="row">
+          <img
+            src="/resources/img/logo-white.png"
+            alt="Omnifood logo"
+            class="logo"
+          />
+          <a href="#top">
+            <img
+              src="/resources/img/logo.png"
+              alt="Omnifood logo"
+              class="logo-black"
+            />
+          </a>
+          <ul class="main-nav" id="nav">
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
+          </ul>
+          <a class="navbar-icon" id="nav-icon"><i class="ion-navicon-round"></i></a>
+        </div>
+      </nav>
       <div class="hero-text-box">
         <h1>
           Goodbye junk food. <br />
           Hello super healthy meals.
         </h1>
-        <a href="javascript:undefined" class="btn btn-full">I'm Hungry</a>
-        <a href="javascript:undefined" class="btn btn-ghost">Show me more</a>
+        <a href="#plans" class="btn btn-full">I'm Hungry</a>
+        <a href="#features" class="btn btn-ghost">Show me more</a>
       </div>
     </header>
 
@@ -47,7 +58,7 @@
     <!-- FEATURES -->
     <!----------------------------------------------->
 
-    <section class="section-features">
+    <section class="section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -56,7 +67,7 @@
           we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row" id="wp-1">
         <div class="col span-1-of-4 box ">
           <i class="ion-ios-infinite-outline icon-big"></i>
           <h3>Up to 365 days/year</h3>
@@ -100,7 +111,7 @@
     <!-- MEALS -->
     <!----------------------------------------------->
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo">
@@ -172,7 +183,7 @@
     <!-- HOW IT WORKS -->
     <!----------------------------------------------->
 
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <div class="row"><h2>How it works &mdash; Simple as 1, 2, 3</h2></div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
@@ -180,6 +191,7 @@
             src="resources/img/app-iPhone.png"
             alt="Omnifood app on iPhone"
             class="app-screen"
+            id="wp-2"
           />
         </div>
         <div class="col span-1-of-2 steps-box">
@@ -203,10 +215,10 @@
               Enjoy your meal after less than 20 minutes. See you the next time!
             </p>
           </div>
-          <a href="javascript:undefined" class="btn-app">
+          <a href="#" class="btn-app">
             <img src="resources/img/download-app.svg" alt="App Store Button" />
           </a>
-          <a href="javascript:undefined" class="btn-app">
+          <a href="#" class="btn-app">
             <img
               src="resources/img/download-app-android.png"
               alt="Play Store Button"
@@ -220,9 +232,9 @@
     <!-- CITIES -->
     <!----------------------------------------------->
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row"><h2>We're currently in these cities</h2></div>
-      <div class="row">
+      <div class="row" id="wp-3">
         <div class="col span-1-of-4 box">
           <img src="resources/img/lisbon-3.jpg" alt="Lisbon" />
           <h3>Lisbon</h3>
@@ -234,7 +246,7 @@
           </div>
           <div class="city-feature">
             <i class="ion-social-twitter icon-small"></i>
-            <a href="javascript:undefined"> @omnifood_lx </a>
+            <a href="#"> @omnifood_lx </a>
           </div>
         </div>
         <div class="col span-1-of-4 box">
@@ -248,7 +260,7 @@
           </div>
           <div class="city-feature">
             <i class="ion-social-twitter icon-small"></i>
-            <a href="javascript:undefined"> @omnifood_sf </a>
+            <a href="#"> @omnifood_sf </a>
           </div>
         </div>
         <div class="col span-1-of-4 box">
@@ -262,7 +274,7 @@
           </div>
           <div class="city-feature">
             <i class="ion-social-twitter icon-small"></i>
-            <a href="javascript:undefined"> @omnifood_berlin </a>
+            <a href="#"> @omnifood_berlin </a>
           </div>
         </div>
         <div class="col span-1-of-4 box">
@@ -276,17 +288,17 @@
           </div>
           <div class="city-feature">
             <i class="ion-social-twitter icon-small"></i>
-            <a href="javascript:undefined"> @omnifood_london </a>
+            <a href="#"> @omnifood_london </a>
           </div>
         </div>
       </div>
     </section>
 
     <!----------------------------------------------->
-    <!-- CITIES -->
+    <!-- TESTIMONIALS -->
     <!----------------------------------------------->
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
       <div class="row"><h2>Our customers can't live without us</h2></div>
       <div class="row">
         <div class="col span-1-of-3">
@@ -341,11 +353,11 @@
     <!-- PLANS -->
     <!----------------------------------------------->
 
-    <section class="section-plans">
+    <section class="section-plans" id="plans">
       <div class="row"><h2>Start eating healthy today</h2></div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box" id="wp-4">
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
@@ -445,10 +457,10 @@
     <!-- FORM -->
     <!----------------------------------------------->
 
-    <section class="section-form">
+    <section class="section-form" id="form">
       <div class="row"><h2>We're happy to hear from you</h2></div>
       <div class="row">
-        <form action="post" action="javascript:undefined" class="contact-form">
+        <form action="post" action="#" class="contact-form">
           <div class="row">
             <div class="col span-1-of-3"><label for="name">Name</label></div>
             <div class="col span-2-of-3">
@@ -522,41 +534,33 @@
     </section>
 
     <!----------------------------------------------->
-    <!-- HEADER -->
+    <!-- FOOTER -->
     <!----------------------------------------------->
 
     <footer>
       <div class="row">
         <div class="col span-2-of-3">
           <ul class="footer-nav">
-            <li><a href=" javascript:undefined">About us</a></li>
-            <li><a href=" javascript:undefined">Blog</a></li>
-            <li><a href=" javascript:undefined">Press</a></li>
-            <li><a href=" javascript:undefined">iOS App</a></li>
-            <li><a href=" javascript:undefined">Android App</a></li>
+            <li><a href=" #">About us</a></li>
+            <li><a href=" #">Blog</a></li>
+            <li><a href=" #">Press</a></li>
+            <li><a href=" #">iOS App</a></li>
+            <li><a href=" #">Android App</a></li>
           </ul>
         </div>
         <div class="col span-1-of-3">
           <ul class="social-links">
             <li>
-              <a href=" javascript:undefined"
-                ><i class="ion-social-facebook"></i
-              ></a>
+              <a href=" #"><i class="ion-social-facebook"></i></a>
             </li>
             <li>
-              <a href=" javascript:undefined"
-                ><i class="ion-social-twitter"></i
-              ></a>
+              <a href=" #"><i class="ion-social-twitter"></i></a>
             </li>
             <li>
-              <a href=" javascript:undefined"
-                ><i class="ion-social-googleplus"></i
-              ></a>
+              <a href=" #"><i class="ion-social-googleplus"></i></a>
             </li>
             <li>
-              <a href=" javascript:undefined"
-                ><i class="ion-social-instagram"></i
-              ></a>
+              <a href=" #"><i class="ion-social-instagram"></i></a>
             </li>
           </ul>
         </div>
@@ -569,4 +573,7 @@
   <script src="vendors/js/respond.min.js"></script>
   <script src="vendors/js/html5shiv.min.js"></script>
   <script src="vendors/js/selectivizr2.min.js"></script>
+  <script src="vendors/js/jquery-3.3.1.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
 </html>
