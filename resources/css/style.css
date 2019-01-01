@@ -32,9 +32,9 @@ header {
       from(rgba(0, 0, 0, 0.7)),
       to(rgba(0, 0, 0, 0.7))
     ),
-    url("../img/hero.jpg");
+    url("../img/hero-min.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/hero.jpg");
+    url("../img/hero-min.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -119,6 +119,7 @@ header {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0 2px 2px #e8e8e8;
   box-shadow: 0 2px 2px #e8e8e8;
   z-index: 9999;
 }
@@ -272,9 +273,9 @@ header {
       from(rgba(0, 0, 0, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url("../img/back-customers.jpg");
+    url("../img/back-customers-min.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/back-customers.jpg");
+    url("../img/back-customers-min.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -643,9 +644,11 @@ a:active {
 #wp-2,
 #wp-3 {
   opacity: 0;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
 
 #wp-4 {
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
