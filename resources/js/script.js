@@ -1,18 +1,22 @@
 $(document).ready(function() {
   // First Time Message
-  const showMessage = sessionStorage.getItem('showMessage');
 
-  if (showMessage !== 'false') {
-    $('.first-time').css({ transform: 'translate(-50%,-50%) scale(1)' });
+  function messageHandler() {
+    const showMessage = sessionStorage.getItem('showMessage');
 
-    $('.first-time button').each(function() {
-      $(this).click(function() {
-        $('.first-time').css({ transform: 'translate(-50%,-50%) scale(0)' });
-        sessionStorage.setItem('showMessage', false);
+    if (showMessage !== 'false') {
+      $('.first-time').css({ transform: 'translate(-50%,-50%) scale(1)' });
+
+      $('.first-time button').each(function() {
+        $(this).click(function() {
+          $('.first-time').css({ transform: 'translate(-50%,-50%) scale(0)' });
+          sessionStorage.setItem('showMessage', false);
+        });
       });
-    });
+    }
   }
 
+  setTimeout(messageHandler, 750);
   // Sticky Navigation Bar
   $('#features').waypoint(
     function(direction) {
