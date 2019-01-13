@@ -13,11 +13,49 @@
 html {
   background-color: #fff;
   color: #555;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 20px;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
+}
+
+.first-time {
+  width: 80vw;
+  position: fixed;
+  z-index: 500;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+  padding: 20vh 0;
+  transition: 300ms ease-out;
+}
+
+.first-time button {
+  margin-top: 10vh;
+  cursor: pointer;
+  width: 200px;
+}
+
+.first-time .close {
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  font-size: 120%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000;
+  border: none;
+  background-color: transparent;
+  transition: 300ms;
+}
+
+.first-time .close:hover {
+  color: #fff;
+  background-color: #ff0000;
 }
 
 /* ----------------------------------------------- */
@@ -32,9 +70,9 @@ header {
       from(rgba(0, 0, 0, 0.7)),
       to(rgba(0, 0, 0, 0.7))
     ),
-    url("../img/hero-min.jpg");
+    url('../img/hero-min.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../img/hero-min.jpg");
+    url('../img/hero-min.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -121,7 +159,7 @@ header {
   background-color: rgba(255, 255, 255, 0.98);
   -webkit-box-shadow: 0 2px 2px #e8e8e8;
   box-shadow: 0 2px 2px #e8e8e8;
-  z-index: 9999;
+  z-index: 5;
 }
 
 .sticky .main-nav {
@@ -273,9 +311,9 @@ header {
       from(rgba(0, 0, 0, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url("../img/back-customers-min.jpg");
+    url('../img/back-customers-min.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/back-customers-min.jpg");
+    url('../img/back-customers-min.jpg');
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -290,7 +328,7 @@ blockquote {
 }
 
 blockquote::before {
-  content: "\201C";
+  content: '\201C';
   font-size: 500%;
   display: block;
   position: absolute;
@@ -376,8 +414,8 @@ cite img {
   margin: 0 auto;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 select,
 textarea {
   width: 100%;
@@ -390,7 +428,7 @@ textarea {
   height: 100px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   margin: 10px 5px 10px 0;
 }
 
@@ -495,7 +533,7 @@ section {
 }
 
 .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: block;
   height: 0;
@@ -529,7 +567,7 @@ h2 {
 }
 
 h2::after {
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   width: 100px;
